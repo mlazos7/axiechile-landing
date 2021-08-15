@@ -1,0 +1,38 @@
+.joinus {
+  position: relative;
+  min-height: 450px;
+  font-size: 0.8em;
+  padding: 0 10vw;
+  padding-left: 30vw;
+  background-color: $joinus-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  h2 {
+    font-weight: bold;
+    text-align: right;
+  }
+  p {
+    text-align: right;
+    padding-bottom: 2vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .joinus {
+    padding: 0 10vw;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}

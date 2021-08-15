@@ -1,0 +1,22 @@
+.our {
+    position:relative;
+    font-size: 0.8em;
+    padding: 0 10vw;
+    padding-right: 30vw;
+    background-color: white;
+    color: $our-color;
+    min-height: 350px;
+    display:flex;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1024px) {
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .our{
+      padding: 0 10vw;
+    }
+  }
+  

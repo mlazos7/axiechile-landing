@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap");
+
+.data {
+  display: flex;
+  flex-direction: row;
+  min-height: 450px;
+
+  &__box {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 90px;
+      height: auto;
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+    .number {
+      font-family: "Old Standard TT", serif;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .description {
+      text-align: justify;
+    }
+
+    .box-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__scholar {
+    background-color: $data-scholar-color;
+  }
+  &__claim {
+    background-color: $data-claim-color;
+  }
+  &__country {
+    background-color: $data-country-color;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .data {
+    height: auto;
+    flex-direction: column;
+
+    &__box {
+      .box-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
