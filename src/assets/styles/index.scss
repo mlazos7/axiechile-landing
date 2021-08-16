@@ -1,9 +1,9 @@
 @import "./colors";
-@import "./section_data";
-@import "./main_content.scss";
-@import "./section_footer.scss";
-@import "./section_joinus.scss";
-@import "./section_our.scss";
+@import "./section-data";
+@import "./hero.scss";
+@import "./section-join.scss";
+@import "./section-our.scss";
+@import "./footer.scss";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 
 * {
@@ -15,7 +15,6 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 20px;
   font-family: "Libre Franklin", sans-serif;
 }
 
@@ -39,6 +38,19 @@ h2 {
 
 p {
   color: $dark-blue;
+}
+
+.bg--green {
+  background-color: $bg-green;
+}
+.bg--light {
+  background-color: $bg-ligth;
+}
+.bg--yellow {
+  background-color: $bg-yellow;
+}
+.bg--white {
+  background-color: white;
 }
 
 .App {
@@ -83,7 +95,6 @@ p {
 .axie-r {
   right: 0;
 }
-
 
 @media only screen and (max-width: 1024px) {
   .axie {

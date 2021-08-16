@@ -1,12 +1,12 @@
-.main {
+.hero {
   display: flex;
   flex-direction: row;
   width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: space-around;
-  &__header {
-    // border: 1px solid blue;
+
+  &__title {
     padding: 0 3vw;
     text-align: left;
     h1 {
@@ -19,7 +19,6 @@
     }
   }
   &__image {
-    // border: 1px solid green;
     img {
       cursor: pointer;
       width: 400px;
@@ -33,12 +32,11 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .main {
-    // background-color: lightblue;
+  .hero {
     flex-direction: column;
     justify-content: center;
 
-    &__header {
+    &__title {
       text-align: center;
     }
 

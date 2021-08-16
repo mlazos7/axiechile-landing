@@ -7,13 +7,12 @@ const TokenBoxStyle = styled.div`
   display: flex;
   justify-content: center;
 
-
   .element {
     display: flex;
     align-items: center;
     p {
       padding: 0 20px 0 3px;
-      font-size: 12px;
+      font-size: 0.7em;
     }
     img {
       width: 20px;
@@ -22,7 +21,7 @@ const TokenBoxStyle = styled.div`
   }
 `;
 
-export const TokenBox = () => {
+const TokenBox = () => {
   const tokens = ["axie-infinity", "smooth-love-potion", "ethereum"];
   const [tokenInfo, setTokenInfo] = useState([]);
 
@@ -75,3 +74,5 @@ export const TokenBox = () => {
     </TokenBoxStyle>
   );
 };
+
+export default TokenBox;
