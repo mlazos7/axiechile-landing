@@ -1,10 +1,10 @@
-import AxieLogo from "./assets/img/logo_axiechileweb.png";
+import AxieLogo from "./assets/img/logo.png";
 import Axie1 from "./assets/img/axie_1.png";
 import Axie2 from "./assets/img/axie_2.png";
 import Axie3 from "./assets/img/axie_3.png";
 
 
-import TokenBox from "./components/TokenBox.jsx";
+// import TokenBox from "./components/TokenBox.jsx";
 import SectionData from "./components/SectionData";
 import Footer from "./components/Footer";
 
@@ -12,8 +12,11 @@ function App() {
   const telegramChannel = "https://t.me/joinchat/91fRo7oHNOsyMDUx";
   return (
     <div className="App">
-      <TokenBox />
+      {/* <TokenBox /> */}
 
+        <div className="logo">
+          <img src={AxieLogo} alt="Axie" />
+        </div>
       <main className="hero">
         <div className="hero__title">
           <h1>Axie Chile</h1>
@@ -28,9 +31,6 @@ function App() {
           >
             Únete a la comunidad
           </a>
-        </div>
-        <div className="hero__image">
-          <img src={AxieLogo} alt="Axie" />
         </div>
       </main>
 
