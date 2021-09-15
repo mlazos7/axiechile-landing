@@ -2,10 +2,64 @@ import React from "react";
 import SLPIcon from "./../assets/img/slp_icon.png";
 import ScholarIcon from "./../assets/img/scholar_icon.png";
 import CountryIcon from "./../assets/img/country_icon.png";
+import styled from "styled-components";
 
-const SectionData = () => {
+const DataStyled = styled.article`
+  display: flex;
+  flex-direction: row;
+  min-height: 450px;
+
+  .card {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 90px;
+      height: auto;
+    }
+
+    .number {
+      font-family: "Old Standard TT", serif;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    &__description {
+      text-align: justify;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    height: auto;
+    flex-direction: column;
+
+    .card {
+      &__header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+  }
+`;
+
+const DataAcademy = () => {
   return (
-    <section className="section-data">
+    <DataStyled>
       <div className="card bg--green">
         <div className="card__header">
           <img src={ScholarIcon} alt="Scholarships" />
@@ -44,8 +98,8 @@ const SectionData = () => {
           reiciendis repellat repudiandae maxime minus?
         </p>
       </div>
-    </section>
+    </DataStyled>
   );
 };
 
-export default SectionData;
+export default DataAcademy;
