@@ -3,38 +3,59 @@ import Axie1 from "./assets/img/axie_1.png";
 import Axie2 from "./assets/img/axie_2.png";
 import Axie3 from "./assets/img/axie_3.png";
 
-
 // import TokenBox from "./components/TokenBox.jsx";
 import SectionData from "./components/SectionData";
 import Footer from "./components/Footer";
+import React from "react";
+import { Timeline } from "react-twitter-widgets";
 
 function App() {
   const telegramChannel = "https://t.me/joinchat/91fRo7oHNOsyMDUx";
+  const twitter = "https://twitter.com/AxieChile";
+  const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLScHCErpcBwzXJx6ndsb_ZTjBMI1x9TMYjPLtOxwY7RvlPdVAA/viewform?usp=sf_link";
   return (
-    <div className="App">
+    <React.Fragment>
       {/* <TokenBox /> */}
-
+      <header>
         <div className="logo">
           <img src={AxieLogo} alt="Axie" />
         </div>
+      </header>
       <main className="hero">
         <div className="hero__title">
-          <h1>Axie Chile</h1>
+          <h1>Academia AxieChile</h1>
           <h2>
-            Nuevos Scholarships <span>pronto!</span>
+            Scholarships <span>abiertos!</span>
           </h2>
           <a
-            href={telegramChannel}
+          type="button"
+            href={googleFormLink}
             className="button"
             rel="noreferrer"
             target="_blank"
           >
-            Únete a la comunidad
+            
+            Únete a la Academia
           </a>
+
+          
+        </div>
+        <div className="hero__twitter">
+          <Timeline
+            dataSource={{
+              sourceType: "profile",
+              screenName: "axiechile",
+            }}
+            options={{
+              height: "380",
+              width: "480",
+              theme: "light",
+            }}
+          />
         </div>
       </main>
 
-     <SectionData/>
+      <SectionData />
 
       <section className="section-our">
         <p>
@@ -54,7 +75,7 @@ function App() {
         </div>
       </section>
       <section className="section-join bg--light">
-        <h2>Dolor sit amet consectetur adipisicing elit.</h2>
+        <h2>Súmate a la revolución del play-to-earn jugando Axie Infinity</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis
           exercitationem laudantium vel voluptatibus expedita et tenetur dolorum
@@ -62,23 +83,22 @@ function App() {
           quia deserunt!
         </p>
 
-        <a
-          href={telegramChannel}
+        {/* <a
+          href={googleFormLink}
           className="button"
           rel="noreferrer"
           target="_blank"
         >
-          Únete a la comunidad
-        </a>
+          Únete a la Academia
+        </a> */}
 
         <div className="axie axie-l">
           <img src={Axie2} alt="Axie" />
         </div>
       </section>
 
-      <Footer telegram={telegramChannel} axie={Axie3}/>
-
-    </div>
+      <Footer twitter={twitter} telegram={telegramChannel} axie={Axie3} />
+    </React.Fragment>
   );
 }
 

@@ -3,14 +3,18 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { RiTelegramFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
 
-const Footer = ({telegram, axie}) => {
+const Footer = ({twitter, telegram, axie}) => {
     return (
         <footer className="bg--yellow">
         <IconContext.Provider
           value={{ className: "icons", size: "32px" }}
         >
-          <div className="social">
+          <div>
+ 
+
+            <a href={twitter} rel="noreferrer" target="_blank">
             <AiFillTwitterCircle />
+            </a>
             <a href={telegram} rel="noreferrer" target="_blank">
               <RiTelegramFill />
             </a>

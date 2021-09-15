@@ -9,7 +9,7 @@ const SectionData = () => {
       <div className="card bg--green">
         <div className="card__header">
           <img src={ScholarIcon} alt="Scholarships" />
-          <p className="number">23</p>
+          <p className="number">43</p>
         </div>
         <p className="card__description">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
@@ -21,7 +21,7 @@ const SectionData = () => {
       <div className="card bg--light">
         <div className="card__header">
           <img src={SLPIcon} alt="SLP Claimed" />
-          <p className="number">37530</p>
+          <p className="number">140000</p>
         </div>
 
         <p className="card__description">
@@ -34,7 +34,7 @@ const SectionData = () => {
       <div className="card bg--yellow">
         <div className="card__header">
           <img src={CountryIcon} alt="Countries" />
-          <p className="number">4</p>
+          <p className="number">6</p>
         </div>
 
         <p className="card__description">

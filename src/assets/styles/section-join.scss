@@ -1,7 +1,6 @@
 .section-join {
   position: relative;
   min-height: 450px;
-  font-size: 0.8em;
   padding: 0 10vw;
   padding-left: 30vw;
   display: flex;
@@ -10,12 +9,12 @@
   justify-content: center;
 
   h2 {
-    font-weight: bold;
     text-align: right;
   }
   p {
     text-align: right;
     padding-bottom: 2vh;
+    font-size: 0.9em;
   }
 }
 
