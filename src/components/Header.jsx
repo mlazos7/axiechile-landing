@@ -2,7 +2,9 @@ import React from "react";
 import AxieLogo from "./../assets/img/logo.png";
 import styled from "styled-components";
 
-const HeaderStyled = styled.header``;
+const HeaderStyled = styled.header`
+  min-height: 8vh;
+`;
 
 const LogoStyled = styled.div`
   position: fixed;
