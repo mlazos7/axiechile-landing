@@ -84,7 +84,7 @@ const DataAcademy = () => {
         <p className="number">6</p>
 
         <p className="card__description">
-          Tenemos prescensia en 6 países de Latino America.
+          Tenemos presencia en 6 países de Latino America.
         </p>
       </div>
     </DataStyled>
