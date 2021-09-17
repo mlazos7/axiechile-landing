@@ -10,17 +10,13 @@ const DataStyled = styled.article`
   min-height: 450px;
 
   .card {
+
     padding: 40px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    &__header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    flex-basis: 100%;
 
     img {
       width: 90px;
@@ -28,27 +24,31 @@ const DataStyled = styled.article`
     }
 
     .number {
-      font-family: "Old Standard TT", serif;
-      font-size: 2rem;
-      font-weight: bold;
+      /* font-family: "Old Standard TT", serif; */
+      font-size: 2.7em;
+      font-weight: normal;
+      /* font-style: italic; */
     }
 
     &__description {
+      font-size: 1.4em;
       text-align: justify;
     }
   }
 
   @media only screen and (max-width: 1024px) {
-    height: auto;
     flex-direction: column;
 
     .card {
+      align-items: center;
+
       &__header {
         width: 100%;
-        display: flex;
+        min-height: 350px;
+        /* display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-evenly; */
       }
     }
   }
@@ -58,44 +58,33 @@ const DataStyled = styled.article`
 `;
 
 const DataAcademy = () => {
+  const ScholarCount = 50;
+  const SLPClaimed = 150000;
+
   return (
     <DataStyled>
       <div className="card bg--green">
-        <div className="card__header">
-          <img src={ScholarIcon} alt="Scholarships" />
-          <p className="number">43</p>
-        </div>
+        <img src={ScholarIcon} alt="Scholarships" />
+        <p className="number">{ScholarCount}</p>
+
         <p className="card__description">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita
-          voluptate molestiae distinctio eius rem, obcaecati animi, id saepe
-          ratione quo hic quibusdam necessitatibus voluptatibus doloribus eaque
-          earum explicabo temporibus odit?
+          {`Nuestra Academia cuenta con más de ${ScholarCount} miembros.`}
         </p>
       </div>
       <div className="card bg--light">
-        <div className="card__header">
-          <img src={SLPIcon} alt="SLP Claimed" />
-          <p className="number">140000</p>
-        </div>
+        <img src={SLPIcon} alt="SLP Claimed" />
+        <p className="number">{SLPClaimed}</p>
 
         <p className="card__description">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-          autem exercitationem quidem voluptatem tenetur suscipit corporis
-          assumenda libero amet, non voluptatibus iure dignissimos nisi
-          reiciendis cum sed magni corrupti maxime.
+          Los miembros de la Academia han recolectado más de {SLPClaimed} SLP
         </p>
       </div>
       <div className="card bg--yellow">
-        <div className="card__header">
-          <img src={CountryIcon} alt="Countries" />
-          <p className="number">6</p>
-        </div>
+        <img src={CountryIcon} alt="Countries" />
+        <p className="number">6</p>
 
         <p className="card__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          asperiores aspernatur, voluptatibus quae earum totam dolor ad
-          accusantium, voluptates omnis pariatur dolores voluptatum! Animi magni
-          reiciendis repellat repudiandae maxime minus?
+          Tenemos prescensia en 6 países de Latino America.
         </p>
       </div>
     </DataStyled>

@@ -18,7 +18,7 @@ const ArticleStyled = styled.article`
   p {
     text-align: right;
     padding-bottom: 2vh;
-    font-size: 0.9em;
+    font-size: 1.4em;
   }
 
   @media only screen and (max-width: 1024px) {

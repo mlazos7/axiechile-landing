@@ -27,7 +27,7 @@ const HeroStyled = styled.main`
       margin-bottom: 6vh;
     }
     a {
-      font-size: 16px;
+      font-size: 1.3em;
     }
   }
 
@@ -45,6 +45,9 @@ const HeroStyled = styled.main`
   }
 
   @media only screen and (max-width: 768px) {
+    .twitter{
+      display: none;
+    }
   }
 `;
 

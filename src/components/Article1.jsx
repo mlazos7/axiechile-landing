@@ -12,6 +12,10 @@ const ArticleStyled = styled.article`
   align-items: center;
   background-color: $background-color;
 
+  p{
+    font-size: 1.4em;
+  }
+
   @media only screen and (max-width: 1024px) {
   }
 
@@ -29,11 +33,7 @@ const Article1 = () => {
         perspiciatis! Modi ratione magni nihil! Aliquid dignissimos magnam
         voluptatem sint, esse nihil nisi! Sunt aut quae id laudantium quis,
         repellat omnis vero cumque earum iusto excepturi soluta exercitationem
-        laborum harum, voluptates aliquid voluptate porro consectetur. Earum,
-        quas! Cumque minima sapiente dolore eligendi eum. Eveniet iste, cumque
-        ratione eius cum fuga autem dolore perspiciatis iure dolorum minus
-        pariatur reprehenderit a. Molestiae reiciendis ipsam odio blanditiis
-        eaque deleniti labore, ducimus.
+        laborum harum, voluptates aliquid voluptate porro consectetur.
       </p>
       <div className="axie axie-r">
         <img src={Axie1} alt="Axie" />

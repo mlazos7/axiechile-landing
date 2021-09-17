@@ -24,13 +24,13 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 400;
   color: $black;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 3em;
   line-height: 38px;
   font-weight: normal;
   color: $gray;
@@ -67,13 +67,11 @@ a {
   display: block;
   width: 260px;
   height: auto;
-  padding: 22px;
+  padding: 30px;
   background-color: $primary-button-color;
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
-  font-weight: bold;
-  line-height: 25px;
 
   &:hover {
     transform: scale(0.98);
