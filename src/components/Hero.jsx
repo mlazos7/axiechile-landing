@@ -23,7 +23,7 @@ const HeroStyled = styled.main`
     }
     h2 {
       margin: 0;
-      margin-top: 1vh;
+      margin-top: 60px;
       margin-bottom: 6vh;
     }
     a {
@@ -76,8 +76,8 @@ const Hero = () => {
             screenName: "axiechile",
           }}
           options={{
-            height: "380",
-            width: "480",
+            height: "600",
+            width: "420",
             theme: "light",
           }}
         />

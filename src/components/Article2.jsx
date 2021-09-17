@@ -4,7 +4,7 @@ import Axie2 from "./../assets/img/axie_2.png";
 
 const ArticleStyled = styled.article`
   position: relative;
-  min-height: 450px;
+  min-height: 600px;
   padding: 0 10vw;
   padding-left: 30vw;
   display: flex;
@@ -14,8 +14,11 @@ const ArticleStyled = styled.article`
 
   h2 {
     text-align: right;
+    padding-bottom: 20px;
+    font-size: 2.4em;
   }
   p {
+    margin: 0;
     text-align: right;
     padding-bottom: 2vh;
     font-size: 1.4em;
@@ -39,14 +42,17 @@ const ArticleStyled = styled.article`
 
 const Article2 = () => {
   return (
-    <ArticleStyled className="bg--light">
+    <ArticleStyled className="bg--white">
       <h2>Súmate a la revolución del play-to-earn jugando Axie Infinity</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis
-        exercitationem laudantium vel voluptatibus expedita et tenetur dolorum
-        voluptate! Recusandae nesciunt rem illum non et odio incidunt sed, quia
-        deserunt!
+        Axie Infinity es un juego online competitivo del tipo play-to-earn que utiliza la
+        tecnología blockchain. 
       </p>
+      <p> En el juego, se tiene que formar un equipo de tres
+        Axies para competir con otros rivales. Cada Axie es representado por un Non
+        Fungible Token (NFT), convirtiendo a los mismos en activos
+        coleccionables digitales.</p>
+        <p>Al ganar batallas y completar misiones obtienes como recompensa $SLP, un token ERC-20 que puede ser tradeado en los principales exchanges</p>
 
       {/* <a
           href={googleFormLink}

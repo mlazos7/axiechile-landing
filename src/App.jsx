@@ -23,8 +23,9 @@ function App() {
       <Hero/>
       <DataAcademy/>
 
-      <Article1/>
       <Article2/>
+      <Article1/>
+    
 
       <Footer twitter={twitter} telegram={telegramChannel}  />
     </React.Fragment>

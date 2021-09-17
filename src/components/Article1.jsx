@@ -7,12 +7,14 @@ const ArticleStyled = styled.article`
   font-size: 0.9em;
   padding: 0 10vw;
   padding-right: 30vw;
-  min-height: 350px;
+  min-height: 450px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: $background-color;
 
-  p{
+  p {
     font-size: 1.4em;
   }
 
@@ -26,14 +28,17 @@ const ArticleStyled = styled.article`
 
 const Article1 = () => {
   return (
-    <ArticleStyled className="bg--white">
+    <ArticleStyled className="bg--light">
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-        perferendis assumenda tempora maiores voluptatum nesciunt minus ex
-        perspiciatis! Modi ratione magni nihil! Aliquid dignissimos magnam
-        voluptatem sint, esse nihil nisi! Sunt aut quae id laudantium quis,
-        repellat omnis vero cumque earum iusto excepturi soluta exercitationem
-        laborum harum, voluptates aliquid voluptate porro consectetur.
+        Si has llegado hasta aquí es porque quieres jugar a Axie Infinity pero
+        la inversión inicial puede resultar elevada para ti o simplemente no
+        quieres invertir tu dinero.
+      </p>
+      <p>
+        No te preocupes, has llegado al lugar indicado, nuestra Academia esta
+        creando semanalmente becas de Axie Infinity para que todos puedan jugar.
+ Puedes postular y participar en los distintos sorteos que
+        realizamos en las redes sociales.
       </p>
       <div className="axie axie-r">
         <img src={Axie1} alt="Axie" />
