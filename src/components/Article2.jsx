@@ -15,7 +15,8 @@ const ArticleStyled = styled.article`
   h2 {
     text-align: right;
     padding-bottom: 20px;
-    font-size: 2.4em;
+
+
   }
   p {
     margin: 0;
@@ -35,7 +36,8 @@ const ArticleStyled = styled.article`
     }
 
     p {
-      text-align: center;
+      text-align: left;
+      
     }
   }
 `;
@@ -43,7 +45,7 @@ const ArticleStyled = styled.article`
 const Article2 = () => {
   return (
     <ArticleStyled className="bg--white">
-      <h2>Súmate a la revolución del play-to-earn jugando Axie Infinity</h2>
+      <h2>Axie Infinity - La revolución play to earn</h2>
       <p>
         Axie Infinity es un juego online competitivo del tipo play-to-earn que utiliza la
         tecnología blockchain. 
@@ -64,7 +66,7 @@ const Article2 = () => {
         </a> */}
 
       <div className="axie axie-l">
-        <img src={Axie2} alt="Axie" />
+        <img className="animate--invert" src={Axie2} alt="Axie" />
       </div>
     </ArticleStyled>
   );

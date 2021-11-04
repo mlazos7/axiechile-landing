@@ -17,11 +17,18 @@ const ArticleStyled = styled.article`
   p {
     font-size: 1.4em;
   }
+  h2{
+    width: 100%;
+    text-align: left;
+  }
 
   @media only screen and (max-width: 1024px) {
   }
 
   @media only screen and (max-width: 768px) {
+    h2{
+      text-align: center;
+    }
     padding: 0 10vw;
   }
 `;
@@ -29,6 +36,7 @@ const ArticleStyled = styled.article`
 const Article1 = () => {
   return (
     <ArticleStyled className="bg--light">
+      <h2>Axie Infinity - Becas</h2>
       <p>
         Si has llegado hasta aquí es porque quieres jugar a Axie Infinity pero
         la inversión inicial puede resultar elevada para ti o simplemente no
@@ -41,7 +49,7 @@ const Article1 = () => {
         realizamos en las redes sociales.
       </p>
       <div className="axie axie-r">
-        <img src={Axie1} alt="Axie" />
+        <img className="animate" src={Axie1} alt="Axie" />
       </div>
     </ArticleStyled>
   );

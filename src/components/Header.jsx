@@ -11,7 +11,7 @@ const LogoStyled = styled.div`
   z-index: 1;
   top: 0;
   img {
-    width: 100px;
+    width: 160px;
     height: auto;
     transform: scaleX(-1);
   }

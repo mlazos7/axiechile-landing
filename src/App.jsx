@@ -15,19 +15,20 @@ import Article2 from "./components/Article2";
 function App() {
   const telegramChannel = "https://t.me/joinchat/91fRo7oHNOsyMDUx";
   const twitter = "https://twitter.com/AxieChile";
+  const instagram = "https://www.instagram.com/axiechileacademia";
   
   return (
     <React.Fragment>
       {/* <TokenBox /> */}
       <Header/>
-      <Hero/>
+      <Hero twitter={twitter} telegram={telegramChannel} instagram={instagram}/>
       <DataAcademy/>
 
       <Article2/>
       <Article1/>
     
 
-      <Footer twitter={twitter} telegram={telegramChannel}  />
+      <Footer twitter={twitter} telegram={telegramChannel} instagram={instagram}  />
     </React.Fragment>
   );
 }

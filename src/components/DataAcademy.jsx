@@ -58,8 +58,8 @@ const DataStyled = styled.article`
 `;
 
 const DataAcademy = () => {
-  const ScholarCount = 50;
-  const SLPClaimed = 150000;
+  const ScholarCount = 66;
+  const SLPClaimed = 500000;
 
   return (
     <DataStyled>
@@ -81,10 +81,10 @@ const DataAcademy = () => {
       </div>
       <div className="card bg--yellow">
         <img src={CountryIcon} alt="Countries" />
-        <p className="number">6</p>
+        <p className="number">7</p>
 
         <p className="card__description">
-          Tenemos presencia en 6 países de Latino America.
+          Tenemos presencia en 7 países de Latino America.
         </p>
       </div>
     </DataStyled>
