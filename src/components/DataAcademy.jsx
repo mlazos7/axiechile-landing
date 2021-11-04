@@ -59,13 +59,13 @@ const DataStyled = styled.article`
 
 const DataAcademy = () => {
   const ScholarCount = 66;
-  const SLPClaimed = 500000;
+  const SLPClaimed = "500.000";
 
   return (
     <DataStyled>
       <div className="card bg--green">
         <img src={ScholarIcon} alt="Scholarships" />
-        <p className="number">{ScholarCount}</p>
+        <p className="number">{ScholarCount}+</p>
 
         <p className="card__description">
           {`Nuestra Academia cuenta con más de ${ScholarCount} miembros.`}
